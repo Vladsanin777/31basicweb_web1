@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Практическое задание 23</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Размещение вакансии</legend>
+                
+                <p><b>Тип вакансии:</b> <label><input type = "radio" name = "choice" value = "cash" checked>Открытая</label><label><input type = "radio" name = "choice" value = "card">Закрытая</label></p>
+                <p><b>Название вакансии:</b> <input type="text" name="vacancy" placeholder="Введите название вакансии"></p>
+                <p><b>Профессиональная область:</b> 		
+                    <select>
+                        <optgroup label="Банки, инвестиции, лизинг">
+                            <option value = ""></option>
+                            <option value = "val_control">Валютный контроль</option>
+                            <option value = "credit">Кредиты</option>
+                            <option value = "security" disabled>Безопасность</option>
+                        </optgroup>
+                        <optgroup label=" Административный персонал">
+                            <option value = "rarman">Архивист</option>
+                            <option value = "driver">Водитель</option>
+                            <option value = "good_evening" disabled>Вечерний секретарь</option>
+                        </optgroup>	
+                        <optgroup label="Высший менеджмент" disabled>
+                            <option value = "director">Директор</option>
+                            <option value = "chief_acc">Главный бухгалтер</option>
+                        </optgroup>				
+                    </select></p>
+                <p><b>Предпологаемый уровень дохода:</b> <input type="number" name="incomeFrom" placeholder="уровень дохода">  
+                <select>
+                            <option value = "rub">RUB</option>
+                            <option value = "usd">USD</option>
+                            <option value = "eur">EUR</option>
+                </select>
+                </p>
+                <p><b>О вакансии:</b></p>
+                <textarea name="vacancyInfo" placeholder="Введите информацию о вакансии" cols="65" rows="1"></textarea><br>
+                <input type="submit" name="submit" value="Разместить">
+            </fieldset>
+        </form>
+    </body>
+</html>
+

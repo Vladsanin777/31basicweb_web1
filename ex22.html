@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Практическое задание 22</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Оформление заказа</legend>
+                <p><b>Введите контактные данные и адрес доставки:</b></p>
+                Контактное лицо: <input type="text" name="firstname" placeholder="Введите имя и фамилию"> Ваш адрес: <input type="text" name="firstname" placeholder="Введите ваш адрес"><br><br>
+                Телефон: <input type="tel" name="firstname" placeholder="Введите ваш телефон"> E-mail: <input type="email" name="firstname" placeholder="ваш e-mail">
+                <p><b>Выберите дату и время доставки:</b></p>
+                Дата доставки: <input type="date" name="delivery_date"> Время доставки: <input type="time" name="delivery_time">
+                <p><b>Оплата:</b></p>
+                <label><input type = "radio" name = "choice" value = "cash">Наличными</label>
+                <label><input type = "radio" name = "choice" value = "card" checked>По карте</label>
+                    <p><b>Прочие параметры:</b></p>
+                <label><input type="checkbox" name="type" value="dingdong">Домофон</label> 
+                <label><input type="checkbox" name="type" value="nodingnodong">Неисправен звонок</label> 
+                <label><input type="checkbox" name="type" value="dogalarm">Собака во дворе</label> 
+                <label><input type="checkbox" name="type" value="backside">Вход с заднего фасада</label> 
+                <label><input type="checkbox" name="type" value="darkside">Вход с торца здания</label>
+                <br><br>
+                <input type="submit" name="submit" value="подтвердить">
+            </fieldset>
+        </form>
+    </body>
+</html>
